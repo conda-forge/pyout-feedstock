@@ -5,11 +5,11 @@ Home: https://github.com/pyout/pyout
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyout-feedstock/blob/master/LICENSE.txt)
 
 Summary: Terminal styling for tabular data
 
-
+Development: https://github.com/pyout/pyout
 
 Current build status
 ====================
