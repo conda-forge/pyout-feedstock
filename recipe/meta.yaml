@@ -1,5 +1,5 @@
 {% set name = "pyout" %}
-{% set version = "0.6.1" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ce78d6ef747b5330da01751f2f6cbfc64f8768086fa56a88cd559b53134d87ae
+  sha256: fc5f30c66492720e273ce7185b713aa935ac1df43475b7b75e85e1658008a2b4
 
 build:
   number: 0
