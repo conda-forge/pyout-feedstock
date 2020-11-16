@@ -31,7 +31,7 @@ test:
   imports:
     - pyout
   commands:
-    - python -m pytest -s -v --pyargs pyout
+    - python -m pytest -s -v -k "not test_tabular_callback_wait_for_top and not test_tabular_write_callable_kb_interrupt_during_wait and not test_tabular_write_callable_kb_interrupt_in_exit" --pyargs pyout
 
 about:
   home: https://github.com/pyout/pyout
