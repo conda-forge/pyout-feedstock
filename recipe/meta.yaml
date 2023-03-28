@@ -21,7 +21,7 @@ requirements:
     - pytest-runner
   run:
     - python
-    - blessings  # [not win]
+    - blessed  # [not win]
     - jsonschema >=3.0.0
 
 test:
