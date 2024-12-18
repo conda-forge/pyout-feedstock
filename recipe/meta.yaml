@@ -1,5 +1,5 @@
 {% set name = "pyout" %}
-{% set version = "0.7.3" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b1419597af4617886a76a3769577573cecba874f263278474a91269a5ee69138
+  sha256: 4b654d5b48d003927ff93212917f184a27998494fd8980b463f93a4c82b56be8
 
 build:
-  number: 3
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
