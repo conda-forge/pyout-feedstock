@@ -21,7 +21,7 @@ requirements:
     - python
     - pip
     - setuptools
-    - pytest-runner
+    - versioneer
   run:
     - python
     - blessed  # [not win]
