@@ -10,7 +10,7 @@ source:
   sha256: 57b0e96a9beb2e20336bd5a265e369915e1c23f50048a7d448b3fab5d076d1d1
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -47,4 +47,3 @@ about:
 extra:
   recipe-maintainers:
     - yarikoptic
-    - jwodder
