@@ -31,6 +31,14 @@ test:
   requires:
     - pytest
     - pytest-timeout
+    # pyout's own test suite pokes stdlib `curses` (tigetstr/tparm) directly,
+    # relying on blessed's Terminal() to have called curses.setupterm() as a
+    # side effect. blessed >=1.34 replaced its stdlib-curses backend with
+    # `jinxed` on all platforms, so that side effect no longer happens and
+    # tests fail with "_curses.error: must call (at least) setupterm() first".
+    # This does not affect the actual run-time `blessed` dependency (pyout
+    # itself never touches curses directly), so pin only here.
+    - blessed <1.34  # [not win]
   imports:
     - pyout
   commands:
